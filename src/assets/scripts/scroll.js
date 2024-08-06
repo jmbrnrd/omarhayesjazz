@@ -29,31 +29,31 @@ export default function () {
                 .to('.overlay', {
                     duration: .75,
                     opacity: 0,
-                    delay: .3,
+                    delay: .5,
                 })
-                .from('.logo .rs', {
-                    opacity: 0,
-                    duration: .2,
-                    stagger: .075,
-                    y: -100,
-                })
-                .from('.the, .cbb', {
-                    opacity: 0,
-                    y: 50,
-                    stagger: .3
-                })
-                .from('.lines', {
-                    duration: .2,
-                    scaleX: 0,
-                    transformOrigin: 'center',
-                })
-                .from('.star', {
-                    rotate: -520,
-                    transformOrigin: 'center',
-                    opacity: 0,
-                    y: 20,
-                    scale: 1
-                })
+                // .from('.logo .rs', {
+                //     opacity: 0,
+                //     duration: .2,
+                //     stagger: .075,
+                //     y: -100,
+                // })
+                // .from('.the, .cbb', {
+                //     opacity: 0,
+                //     y: 50,
+                //     stagger: .3
+                // })
+                // .from('.lines', {
+                //     duration: .2,
+                //     scaleX: 0,
+                //     transformOrigin: 'center',
+                // })
+                // .from('.star', {
+                //     rotate: -520,
+                //     transformOrigin: 'center',
+                //     opacity: 0,
+                //     y: 20,
+                //     scale: 1
+                // })
         }
 
         if (!!rcbbHero) {
