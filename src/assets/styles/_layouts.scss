@@ -27,7 +27,7 @@ html.lenis {
 // -------------------------------------
 .hero {
   position: relative;
-  height: 80dvh;
+  height: 100dvh;
   width: 100%;
   display: grid;
   grid-template-areas: 'stack';
@@ -55,17 +55,24 @@ html.lenis {
 
   .logo {
     visibility: hidden;
-    transform: translateY(5vh);
+    transform: translateY(-20vh);
     width: min(80%, 600px);
     z-index: 1;
+    opacity: .5;
     .rs { fill: $clr-primary-500; }
     .the, .cbb, .lines, .star {
       fill: white;
     }
   }
+  span {
+    font-size: 2.4rem;
+    color: white;
+    transform: translateY(-10vh);
+  }
 
   .social {
     position: absolute;
+    z-index: 100;
     top: 2rem;
     right: 2rem;
     a {
