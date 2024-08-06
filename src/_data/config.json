@@ -1,0 +1,17 @@
+{
+  "heroImgs": [
+    "IMG_8292.jpg",
+    "IMG_0001.jpg",
+    "IMG_8286.jpg"
+  ],
+  "cldImgPath": {
+    "root": "https://res.cloudinary.com/rdl/image/upload/",
+    "small": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_300/rcbb/",
+    "large": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/rcbb/"
+
+  },
+  "email": {
+    "enquiries": "enquiries@redstonebigband.com"
+  }
+}
+

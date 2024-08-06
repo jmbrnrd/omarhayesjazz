@@ -1,0 +1,36 @@
+<form id="contactForm" class="form-contact-front">
+    <div class="form-field">
+        <input name="contact_name"
+               type="text"
+               required
+               aria-label="full name"
+               placeholder="Your full name">
+    </div>
+    <div class="form-field">
+        <input name="contact_company"
+               type="text"
+               aria-label="Company name"
+               required
+               placeholder="Company name">
+    </div>
+    <div class="form-field">
+        <input name="contact_email"
+               type="email"
+               aria-label="email address"
+               required
+               placeholder="Email address">
+    </div>
+    <div class="form-field">
+        <input name="contact_phone"
+               type="tel"
+               aria-label="email address"
+               placeholder="Phone number">
+    </div>
+    <span class="form-info" id="formInfo">
+        These details will only be used to contact you about your enquiry.
+    </span>
+
+    <button id="btnSubmit"
+            class="btn btn-submit"
+            aria-label="Submit your contact details">Submit</button>
+</form>

@@ -1,0 +1,58 @@
+---
+title: "Redstone Community Big Band - Concert Listing"
+pageClass: "page-events"
+layout: "base.njk"
+---
+
+<header class="event-header">
+
+    <div class="header">
+        <a href="/" class="btn-back" aria-label="redstonebigband.com">
+            <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36"><path d="M360-200
+            80-480l280-280 56 56-183 184h647v80H233l184 184-57 56Z"/></svg>
+        </a>
+        <div>
+            {% include 'partials/logo-instruments.njk' %}
+            <h1>Redstone Community Big Band Events Listing</h1>
+        </div>
+    </div>
+   <div></div>
+</header>
+<main>
+    <ul class="event-listing">
+        {% for event in events %}
+            <li class="event">
+                <div>
+                    <div class="date">
+                        <span class="d">{{ event.date[0] | upper }}</span>
+                        <span class="m">{{ event.date[1] | upper }} {{ event.date[2] | upper }}</span>
+                    </div>
+                </div>
+                <div class="desc">
+                    <h2>{{ event.title }}</h2>
+                    <p class="desc">{{ event.desc }}</p>
+                    {% if event.venueMapLink %}
+                        <span><strong>Venue</strong>: <a href="{{ event.venueMapLink }}"  class="inline" target="_blank" aria-label="Venue directions">{{ event.venue }}</a></span>
+                    {% endif %}
+                    {% if event.tickets %}
+                        <span><strong>Tickets</strong>: {{ event.tickets }}</span>
+                    {% endif %}
+                    {% if event.time %}
+                        <span><strong>Doors</strong>: {{ event.time }}</a></span>
+                    {% endif %}
+                    {% if event.charity %}
+                    <img loading="lazy" class="img-charity" alt="Charity logo" src="/assets/images/{{ event.charity }}">
+                    {% endif %}
+                </div>
+                <div class="image">
+                    <a href="{{ config.cldImgPath.large }}{{ event.img }}" aria-label="Download {{ event.name }} concert flyer">
+                        <img src="{{ config.cldImgPath.small }}{{ event.img }}" alt="{{ event.name }} image">
+                    </a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</main>
+{% include 'partials/footer.njk' %}
+
+

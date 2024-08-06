@@ -1,0 +1,21 @@
+{
+  "name": "rcbb",
+  "version": "0.0.2",
+  "description": "The website for the Redstone Community Big Band",
+  "main": "index.html",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "cert": "mkdir -p ./tls & mkcert -cert-file ./tls/localhost-cert.pem -key-file ./tls/localhost-key.pem -ecdsa localhost 127.0.0.1 ::1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3",
+    "esbuild": "^0.17.18"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.35",
+    "glightbox": "^3.2.0",
+    "gsap": "^3.12.5"
+  }
+}

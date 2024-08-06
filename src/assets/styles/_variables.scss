@@ -1,0 +1,57 @@
+
+
+
+// fonts
+$ff-primary: 'Poppins', sans-serif;
+$ff-heading: 'Fjalla One', serif;
+$fw-normal: 300;
+$fw-semi-bold: 600;
+$fw-bold: 600;
+$fs-small: .9rem;
+$fs-default: 1.25rem;
+$fs-large: 1.875rem;
+$fs-x-large: 5rem;
+$fs-button: .8rem;
+
+// colors
+$clr-primary-500: hsl(210,30.2%,20.8%);
+$clr-accent-500: hsl(189, 96%, 48%);
+$clr-accent-100: hsl(189, 96%, 95%);
+$clr-accent-alt-500: hsl(83, 86%, 46%);
+$clr-grey-900: hsl(0, 0%, 20%);
+$clr-grey-200: hsl(0, 0%, 85%);
+$clr-grey-100: hsl(0, 0%, 90%);
+
+
+// padding
+$grid-gap: 2.5rem;
+$grid-min-col-width: 18rem;
+$padding-default: 1.5rem clamp(1rem, 5%, 3rem);
+
+// transitions
+$trans-duration: 180ms;
+$trans-easing: ease-out;
+
+// layouts
+$mq-narrow                    : 35em; // 700px
+$mq-medium                    : 48em; // 960px
+$mq-wide                      : 59em; // 1200px
+
+$layout-margin: 3.75rem;
+$layout-max-width: min(100% - #{$layout-margin}, 1400px);
+
+// Hamburger button
+$hamburger-padding            : 8px 12px ;
+$hamburger-layer-color        : $clr-primary-500;
+$hamburger-line-width         : 40px !default;
+$hamburger-line-height        : 4px !default;
+$hamburger-line-spacing       : 6px !default;
+$hamburger-line-color         : $clr-accent-alt-500;
+$hamburger-line-border-radius : 2px !default;
+$hamburger-hover-trans-dur    : 0.15s !default;
+$hamburger-hover-trans-func   : linear !default;
+
+// Themes
+$clr-primary-500: hsl(16, 800%, 50%);
+$clr-accent-500: hsl(186 81% 38%);
+$section-padding: 4rem;
