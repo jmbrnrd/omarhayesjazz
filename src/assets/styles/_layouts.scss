@@ -66,28 +66,30 @@ html {
     transform: translateY(-17.5vh);
   }
 
-  .social {
-    position: absolute;
-    z-index: 100;
-    top: 2rem;
-    right: 2rem;
-    a {
-      text-decoration: none;
-    }
-    a svg {
-      transition: all .3s ease-out;
-      fill: white;
-      width: 48px;
-      height: 48px;
-      opacity: .75;
+}
 
-      &:hover {
-        scale: 1.1;
-        opacity: 1;
-      }
+.social {
+  position: absolute;
+  z-index: 100;
+  top: 2rem;
+  right: 2rem;
+  a {
+    text-decoration: none;
+  }
+  a svg {
+    transition: all .3s ease-out;
+    fill: white;
+    width: 48px;
+    height: 48px;
+    opacity: .75;
+
+    &:hover {
+      scale: 1.1;
+      opacity: 1;
     }
   }
 }
+
 .header-section {
   display: grid;
   grid-template-areas: 'stack';
