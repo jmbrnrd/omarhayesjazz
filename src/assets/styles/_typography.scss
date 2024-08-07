@@ -14,16 +14,17 @@ h1, h2, h3, h4, h5 {
   font-family: $ff-heading;
   font-weight: 700;
   line-height: 1.1;
-  color: $clr-primary-500;
+  color: $clr-black;
   margin-bottom: 1rem;
   text-wrap: balance;
 }
 
 .display {
-  font-weight: 400;
+  //font-weight: 400;
   font-size: clamp(1.75rem, 5vw + .5rem, 5rem);
-  color: hsl(0, 50%, 50%);
+  color: $clr-black;
   line-height: 1.05;
+  //letter-spacing: -1px;
   &-copy {
     font-size: clamp(1rem,1vw + 1rem, 1.5rem);
     line-height: 1.5;
@@ -32,7 +33,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 h1 {
-  color: hsl(0, 50%, 30%);
   font-size: clamp(3rem, 5vw + 1rem, #{$fs-x-large});
 }
 h2 {

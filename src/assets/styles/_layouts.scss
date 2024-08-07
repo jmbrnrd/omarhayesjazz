@@ -30,7 +30,7 @@ html.lenis {
   grid-template-areas: 'stack';
   place-items: center;
   overflow: hidden;
-  background-color: $clr-grey-900;
+  background-color: $clr-primary-500;
 
   > * { grid-area: stack; }
 
@@ -52,7 +52,7 @@ html.lenis {
 
   .logo {
     visibility: hidden;
-    transform: translateY(-20vh);
+    transform: translateY(-15vh);
     width: min(80%, 600px);
     z-index: 1;
     opacity: .5;
@@ -60,7 +60,7 @@ html.lenis {
   span {
     font-size: 2.4rem;
     color: white;
-    transform: translateY(-10vh);
+    transform: translateY(-17.5vh);
   }
 
   .social {
@@ -84,6 +84,44 @@ html.lenis {
       }
     }
   }
+}
+.header-section {
+  display: grid;
+  grid-template-areas: 'stack';
+  place-items: center;
+  background-color: $clr-primary-500;
+  padding: 2rem;
+  min-height: 80vh;
+  > * { grid-area: stack; }
+  .logo {
+    opacity: .125;
+  }
+  .boilerplate {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    h1 {
+      font-size: clamp(1.75rem, 5vw + .5rem, 5rem);
+      color: $clr-black;
+      line-height: 1.05;
+      margin: 0;
+      padding: 0;
+    }
+    span {
+      color: white;
+      text-align: center;
+      font-size: clamp(1rem, 1vw + .5rem, 2rem);;
+      a {
+        color: white;
+        text-decoration: none;
+        transition: color .3s ease-out;
+        &:hover {
+          color: $clr-black;
+        }
+      }
+    }
+  }
+
 }
 .content-section {
   position: relative;
