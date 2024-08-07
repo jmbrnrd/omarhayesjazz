@@ -14,6 +14,7 @@ module.exports = function (eleventy) {
   })
 
   eleventy.addWatchTarget("./src/assets/styles/");
+  eleventy.addWatchTarget("./src/assets/fonts/");
   eleventy.addWatchTarget("./src/assets/images/");
   eleventy.addWatchTarget("./src/assets/favicons/");
   eleventy.addWatchTarget("./src/assets/scripts/");
@@ -25,6 +26,7 @@ module.exports = function (eleventy) {
   eleventy.addPassthroughCopy("./src/site.webmanifest");
   eleventy.addPassthroughCopy("./src/favicon.ico");
   eleventy.addPassthroughCopy("./src/assets/images");
+  eleventy.addPassthroughCopy("./src/assets/fonts");
   eleventy.addPassthroughCopy("./src/assets/favicons");
   eleventy.addPassthroughCopy("./tls/");
   eleventy.addPlugin(eleventySass);
