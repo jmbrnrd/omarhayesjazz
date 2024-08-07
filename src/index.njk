@@ -4,8 +4,8 @@ pageClass: "page-home"
 layout: "base.njk"
 ---
 
-<header id="home" class="hero">
-    <img class="bg" src="https://res.cloudinary.com/rdl/image/upload/v1722944838/ohq/omq-setup.jpg" alt="">
+<header id="home" class="header-section">
+{#    <img class="bg" src="https://res.cloudinary.com/rdl/image/upload/v1722944838/ohq/omq-setup.jpg" alt="">#}
 {#    <div class="social">#}
 {#        <a href="https://www.facebook.com/RedstoneCommunityBigBand/" aria-label="Follow Redstone us on Facebook">#}
 {#            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">#}
@@ -19,8 +19,20 @@ layout: "base.njk"
 {#            </svg>#}
 {#        </a>#}
 {#    </div>#}
-    <div class="overlay"></div>
-    {% include 'partials/logo.njk' %}
+    <div class="boilerplate">
+        <span class="left">THE</span>
+        <h1>OMAR HAYES QUINTET</h1>
+        <span>straight-ahead jazz, blues and latin</span>
+        <span>e: <a href="mailto:info@omarhayesjazz.com">info@omarhayesjazz.com</a></span>
+        <span>t: <a href="tel:07950272255">07950 272255</a></span>
+    </div>
+
+{#    <div class="overlay"></div>#}
+{#    {% include 'partials/logo.njk' %}#}
+
 
 </header>
+<div class="full-width-image">
+    <img src="assets/images/omq-group1-col2.jpg" aria-label="image of The Omar Hayes Quintet">
+</div>
 
