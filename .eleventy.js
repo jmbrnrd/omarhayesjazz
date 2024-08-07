@@ -13,11 +13,7 @@ module.exports = function (eleventy) {
     })
   })
 
-  eleventy.addWatchTarget("./src/assets/styles/");
-  eleventy.addWatchTarget("./src/assets/fonts/");
-  eleventy.addWatchTarget("./src/assets/images/");
-  eleventy.addWatchTarget("./src/assets/favicons/");
-  eleventy.addWatchTarget("./src/assets/scripts/");
+  eleventy.addWatchTarget("./src/assets/*");
   eleventy.addWatchTarget("./src/data/");
   eleventy.addShortcode("year", () => {
     return `${new Date().getFullYear()}`
