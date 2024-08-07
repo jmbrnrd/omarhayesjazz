@@ -19,6 +19,9 @@ html.lenis {
   pointer-events: none;
 }
 
+html {
+  background-color: $clr-black;
+}
 
 // Hero
 // -------------------------------------
@@ -91,7 +94,7 @@ html.lenis {
   place-items: center;
   background-color: $clr-primary-500;
   padding: 2rem;
-  min-height: 80vh;
+  min-height: 38vh;
   > * { grid-area: stack; }
   .logo {
     opacity: .125;
@@ -124,6 +127,13 @@ html.lenis {
     }
   }
 
+}
+.full-width-image {
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 .content-section {
   position: relative;
