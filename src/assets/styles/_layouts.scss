@@ -20,7 +20,7 @@ html.lenis {
 }
 
 html {
-  background-color: $clr-black;
+  background-color: #000;
 }
 
 // Hero
@@ -94,7 +94,7 @@ html {
   place-items: center;
   background-color: $clr-primary-500;
   padding: 2rem;
-  min-height: 38vh;
+  min-height: 33vh;
   > * { grid-area: stack; }
   .logo {
     opacity: .125;
