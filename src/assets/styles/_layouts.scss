@@ -98,14 +98,18 @@ html {
   padding: 2rem;
   min-height: 100dvh;
   > * { grid-area: stack; }
-  .logo {
-    opacity: .125;
+  img {
+    position: absolute;
+    inset: auto auto 0;
+    z-index: 1;
+    max-width: 100%;
   }
   .boilerplate {
-    position: relative;
+    position: absolute;
+    inset: 38vh auto auto;
     z-index: 5;
     display: grid;
-    transform: translateY(-25vh);
+    margin-top: -25vh;
     grid-template-columns: 1fr;
     h1 {
       font-size: clamp(1.75rem, 5vw + .5rem, 5rem);
@@ -119,28 +123,19 @@ html {
       text-align: right;
       font-size: clamp(1rem, 1vw + .5rem, 2rem);
       a {
+        cursor: pointer;
         color: white;
         text-decoration: none;
         transition: color .3s ease-out;
-        &:hover {
-          color: $clr-black;
-        }
+        &:hover { color: $clr-black; }
       }
-      &.left {
-        text-align: left;
-      }
+      &.left { text-align: left; }
     }
   }
-
 }
 
 
-  img {
-    position: absolute;
-    bottom: 0;
-    max-width: 100%;
-    object-fit: cover;
-  }
+
 
 .content-section {
   position: relative;
