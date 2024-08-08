@@ -1,0 +1,43 @@
+// Animations
+// ============================
+.entry {
+  opacity: 0;
+  &.slide-up {
+    transform: translateY(100px);
+    transition: opacity 1000ms ease-in, transform 750ms cubic-bezier(.1,.5,.5,1);;
+    &.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  &.slide-in-left {
+    transform: translateX(-100px);
+    transition: opacity 750ms ease, transform 500ms cubic-bezier(.1,.5,.5,1);;
+    &.reveal {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  &.slide-in-right {
+    transform: translateX(100px);
+    transition: opacity 750ms ease, transform 500ms cubic-bezier(.1,.5,.5,1);;
+    &.reveal {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  &.scale-up {
+    transform: scale(.75);
+    transition: opacity 500ms ease, transform 500ms cubic-bezier(.1,.5,.5,1);;
+    &.reveal {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  &.fade-in {
+    transition: opacity 500ms ease, transform 500ms cubic-bezier(.1,.5,.5,1);;
+    &.reveal {
+      opacity: 1;
+    }
+  }
+}
