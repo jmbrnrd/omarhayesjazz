@@ -1,10 +1,10 @@
 
 import scroll from './scroll';
-import glightbox from './glightbox';
+// import glightbox from './glightbox';
 import animations from "./animations";
 
 scroll();
-glightbox();
+//glightbox();
 animations();
 
 /**
