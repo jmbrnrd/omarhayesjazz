@@ -96,13 +96,16 @@ html {
   place-items: center;
   background-color: $clr-primary-500;
   padding: 2rem;
-  min-height: 33vh;
+  min-height: 100dvh;
   > * { grid-area: stack; }
   .logo {
     opacity: .125;
   }
   .boilerplate {
+    position: relative;
+    z-index: 5;
     display: grid;
+    transform: translateY(-25vh);
     grid-template-columns: 1fr;
     h1 {
       font-size: clamp(1.75rem, 5vw + .5rem, 5rem);
@@ -130,13 +133,15 @@ html {
   }
 
 }
-.full-width-image {
+
 
   img {
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
     object-fit: cover;
   }
-}
+
 .content-section {
   position: relative;
   display: grid;

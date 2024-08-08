@@ -1,16 +1,18 @@
 
 import scroll from './scroll';
-import glightbox from './glightbox';
+// import glightbox from './glightbox';
+import animations from "./animations";
 
 scroll();
-glightbox();
+//glightbox();
+animations();
 
 /**
  * Randomly set the hero images
  */
 function setHeroImage() {
 
-    // const heroImages = ["IMG_8292.jpg","IMG_0001.jpg","IMG_8286.jpg"];
+    // const heroImages = [];
     // const hero = document.querySelector('.hero .bg')
     //
     // hero.src =
