@@ -23,55 +23,12 @@ export default function () {
 
     function onInit() {
 
-        if (!!rcbbLogo) {
-            rcbbLogo.style.visibility = 'visible';
-            const load = gsap.timeline()
-                .to('.overlay', {
-                    duration: .75,
-                    opacity: 0,
-                    delay: .5,
-                })
-                // .from('.logo .rs', {
-                //     opacity: 0,
-                //     duration: .2,
-                //     stagger: .075,
-                //     y: -100,
-                // })
-                // .from('.the, .cbb', {
-                //     opacity: 0,
-                //     y: 50,
-                //     stagger: .3
-                // })
-                // .from('.lines', {
-                //     duration: .2,
-                //     scaleX: 0,
-                //     transformOrigin: 'center',
-                // })
-                // .from('.star', {
-                //     rotate: -520,
-                //     transformOrigin: 'center',
-                //     opacity: 0,
-                //     y: 20,
-                //     scale: 1
-                // })
-        }
-
-        if (!!rcbbHero) {
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '.hero',
-                    start: 'center center',
-                    end: 'bottom top',
-                    scrub: true,
-                    // markers: true
-                }
-            });
-            tl.to('.bg', {
-                scale: 1.05,
-            });
-        }
-
-
+        // const load = gsap.timeline()
+        //     .to('.overlay', {
+        //         duration: .75,
+        //         opacity: 0,
+        //         delay: .5,
+        //     });
 
 
         const anchors = document.querySelectorAll('a');
@@ -83,23 +40,12 @@ export default function () {
             }
         });
 
-
-        // ScrollTrigger.batch(".event", {
-        //     start: 'top 80%',
-        //     onEnter: batch => {
-        //         gsap.to(batch, {
-        //             autoAlpha: 1,
-        //             duration: .3
-        //         });
-        //     },
-        // });
-
     }
 
     window.addEventListener('load', () => {
         console.log('Window loaded!');
         onInit();
-    })
+    });
 
 
 }
