@@ -20,7 +20,7 @@ html.lenis {
 }
 
 html {
-  background-color: #000;
+  background-color: $clr-primary-500;
 }
 
 // Hero
@@ -40,7 +40,7 @@ html {
   .overlay {
     position: absolute;
     inset: 0;
-    background: $clr-primary-500;
+    background: $clr-black;
     pointer-events: none;
   }
 
@@ -94,7 +94,6 @@ html {
   display: grid;
   grid-template-areas: 'stack';
   place-items: center;
-  background-color: $clr-primary-500;
   padding: 2rem;
   min-height: 100dvh;
   > * { grid-area: stack; }
@@ -104,6 +103,7 @@ html {
     z-index: 1;
     max-width: 100%;
     max-height: 62vh;
+    opacity: 1;
   }
   .boilerplate {
     position: absolute;
@@ -142,115 +142,25 @@ html {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-
-  .section-title {
-    padding: 2rem 2rem 0;
-    h2 {
-      text-transform: uppercase;
-      font-size: 2.4rem;
-      letter-spacing: .1rem;
-      font-weight: $fw-normal;
-    }
-  }
-  .section-body {
-    padding-inline: 2rem;
-    h2 {
-      color: currentColor;
-      font-family: $ff-heading;
-      font-weight: $fw-normal;
-      text-transform: uppercase;
-    }
-  }
+  background-color: white;
+  padding: 3rem;
 
   @media (width > 800px) {
-
       display: grid;
-      grid-template-columns: 1fr minmax(0, 380px) minmax(0, 620px) 1fr;
+      //grid-template-columns: 1fr minmax(0, 380px) minmax(0, 620px) 1fr;
       align-items: start;
       gap: 2rem;
-      padding: 0;
-
-    .section-title {
-      grid-column: 2 / 3;
-      position: sticky;
-      top: 0;
-      padding: $section-padding 2rem 2rem 0;
-      display: grid;
-      grid-template-areas: 'stack';
-      h2 { font-size: 4rem; }
-      > * {
-        grid-area: stack;
-        position: sticky;
-        top: 0;
-
-      }
-
-    }
-    .section-img {
-      position: absolute;
-      inset: 0;
-      grid-column: 1 / 3;
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-    .section-body {
-      grid-column: 3 / 4;
-      padding-block: $section-padding;
-      padding-inline: 0;
-      h2 {
-        text-transform: uppercase;
-        text-align: left;
-        font-size: 4rem;
-        color: currentColor;
-      }
-      h3 {
-        color: currentColor;
-        font-family: $ff-primary;
-        font-weight: $fw-semi-bold;
-        text-transform: uppercase;
-      }
-    }
-    h2 {
-      font-size: 4.5rem;
-      text-align: right;
-      line-height: 1;
-      font-weight: 400;
-      letter-spacing: -.02rem;
-    }
   }
 }
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  place-items: center;
-  gap: 2rem;
-  margin-inline: auto;
-  padding-bottom: 2rem;
-}
-.footer {
+
+footer {
   position: relative;
   display: grid;
-  place-content: center;
-  place-items: center;
-  background-image: linear-gradient(hsl(0 0% 10%),hsl(0 0% 5%));
+  //background-color: $clr-black;
+  background-image: linear-gradient($clr-black,black);
   padding: 3rem;
   min-height: 38dvh;
   z-index: 10;
-  img {
-    width: min(200px, 90%);
-  }
-  svg {
-    fill: $clr-primary-500;
-  }
-  p {
-    margin-top: 1rem;
-    font-size: .8rem;
-    text-align: center;
-    color: $clr-primary-500;
-  }
 }
 
 // Gallery
@@ -288,30 +198,6 @@ html {
 
 // Utils
 // -------------------------------------
-.theme {
-  &-orange {
-    background-image: linear-gradient($clr-primary-500, darken($clr-primary-500, 5%));
-    color: white;
-    h2 { color: darken($clr-primary-500, 20%); }
-    p { color: white; }
-  }
-  &-blue {
-    background-image: linear-gradient($clr-accent-500, darken($clr-accent-500, 5%));
-    color: white;
-    h2 { color: darken($clr-primary-500, 20%); }
-    p { color: white; }
-  }
-  &-grey {
-    background-image: linear-gradient( $clr-grey-100, $clr-grey-200);
-    h2 { color: $clr-grey-900; }
-    p { color: $clr-grey-900; }
-  }
-  &-white {
-    background-color: white;
-    h2 { color: $clr-primary-500; }
-    p { color: $clr-grey-900; }
-  }
-}
 .accent {
   color: $clr-accent-500 !important;
   opacity: .75;
@@ -324,15 +210,7 @@ html {
   opacity: .5;
 }
 .black {
-  color: $clr-grey-900 !important;
-}
-.ll {
-  color: black;
-  font-weight: $fw-semi-bold;
-}
-.hl {
-  color: white;
-  font-weight: $fw-semi-bold;
+  color: $clr-black !important;
 }
 
 
