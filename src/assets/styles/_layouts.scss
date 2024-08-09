@@ -60,6 +60,7 @@ html {
     z-index: 1;
     opacity: .5;
   }
+
   span {
     font-size: 2.4rem;
     color: white;
@@ -91,12 +92,16 @@ html {
 }
 
 .header-section {
+  position: relative;
   display: grid;
   grid-template-areas: 'stack';
   place-items: center;
-  padding: 2rem;
-  min-height: 100dvh;
+  //padding: 2rem;
+  min-height: 62dvh;
   > * { grid-area: stack; }
+  @media (width > 800px) {
+    min-height: 90dvh;
+  }
   img {
     position: absolute;
     inset: auto auto 0;
@@ -140,27 +145,40 @@ html {
 
 .content-section {
   position: relative;
+
   display: grid;
   grid-template-columns: 1fr;
   background-color: white;
   padding: 3rem;
+  gap: 2rem;
+
+  .line-up {
+    font-size: clamp(1rem, 2vw, #{$fs-default});
+    li {
+      list-style: none;
+    }
+  }
 
   @media (width > 800px) {
+
       display: grid;
-      //grid-template-columns: 1fr minmax(0, 380px) minmax(0, 620px) 1fr;
+      grid-template-columns: 66% 33%;
       align-items: start;
-      gap: 2rem;
+      padding-inline: 10%;
   }
 }
 
 footer {
   position: relative;
   display: grid;
-  //background-color: $clr-black;
+  color: $clr-primary-500;
   background-image: linear-gradient($clr-black,black);
   padding: 3rem;
-  min-height: 38dvh;
   z-index: 10;
+  font-size: 1rem;
+  .copy {
+    text-align: right;
+  }
 }
 
 // Gallery

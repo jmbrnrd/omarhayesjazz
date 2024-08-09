@@ -6,8 +6,11 @@
     "large": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/rcbb/"
 
   },
-  "email": {
-    "enquiries": "info@omarhayesjazz.com"
+  "link": {
+    "facebook": "https://www.facebook.com/omarhayesquintet/",
+    "instagram": "https://www.instagram.com/omarhayesquintet/",
+    "email": "info@omarhayesjazz.com",
+    "tel": "07950 272255"
   }
 }
 
