@@ -36,8 +36,6 @@ layout: "base.njk"
 
     <section class="content-section">
 
-
-
         <div class="introduction">
             <h2>ABOUT US</h2>
             <p>The Omar Hayes Quintet are a Surrey-based ensemble that plays vocal-led, straight-ahead jazz, blues and
@@ -58,8 +56,37 @@ layout: "base.njk"
             </ul>
         </div>
 
+    </section>
 
-
+    <section class="content-section">
+        <div>
+        <h2>MEDIA GALLERY</h2>
+        <ul class="gallery-container" aria-label="Image gallery">
+            {% for img in gallery %}
+                <li>
+                    {% if img.type === 'video' %}
+                        <a class="glightbox"
+                           href="{{ img.href }}"
+                           aria-label="{{ img.description }}"
+                           data-glightbox="description: {{ img.description }}">
+                            <img loading="lazy"
+                                 alt="Video: {{ img.description }}"
+                                 src="{{ img.src }}">
+                        </a>
+                    {% else %}
+                        <a class="glightbox"
+                           href="{{ config.cldImgPath.large }}{{ img.filename }}"
+                           aria-label="{{ img.description }}"
+                           data-glightbox="description: {{ img.description }}">
+                            <img loading="lazy"
+                                 alt="Image: {{ img.description }}"
+                                 src="{{ config.cldImgPath.small }}{{ img.filename }}">
+                        </a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        </div>
     </section>
 
 </main>
