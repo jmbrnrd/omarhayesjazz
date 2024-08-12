@@ -165,7 +165,12 @@ html {
       grid-template-columns: 66% 33%;
       align-items: start;
       padding-inline: 10%;
+    &.gallery {
+      grid-template-columns: 1fr;
+    }
+
   }
+
 }
 
 footer {
