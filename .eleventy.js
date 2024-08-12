@@ -14,7 +14,7 @@ module.exports = function (eleventy) {
   })
 
   eleventy.addWatchTarget("./src/assets/*");
-  eleventy.addWatchTarget("./src/_data/");
+  eleventy.addWatchTarget("./src/_data/*");
   eleventy.addShortcode("year", () => {
     return `${new Date().getFullYear()}`
   });

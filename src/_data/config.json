@@ -2,8 +2,8 @@
   "heroImgs": [],
   "cldImgPath": {
     "root": "https://res.cloudinary.com/rdl/image/upload/",
-    "small": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_300/rcbb/",
-    "large": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/rcbb/"
+    "small": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_300/ohq/",
+    "large": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/ohq/"
 
   },
   "link": {
