@@ -1,7 +1,7 @@
 {
   "name": "rcbb",
   "version": "0.0.2",
-  "description": "The website for the Redstone Community Big Band",
+  "description": "The website for the Omar Hayes Quintet",
   "main": "index.html",
   "scripts": {
     "start": "eleventy --serve",
