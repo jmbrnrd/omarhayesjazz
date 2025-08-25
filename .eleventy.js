@@ -1,5 +1,6 @@
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 const esbuild = require('esbuild');
+const embedYouTube = require('eleventy-plugin-youtube-embed');
 module.exports = function (eleventy) {
 
   // Run esbuild before anything else (using bundle for js)
@@ -26,6 +27,8 @@ module.exports = function (eleventy) {
   eleventy.addPassthroughCopy("./src/assets/favicons");
   eleventy.addPassthroughCopy("./tls/");
   eleventy.addPlugin(eleventySass);
+
+  eleventy.addPlugin(embedYouTube);
 
   return {
     templateFormats: ['md', 'njk'],
